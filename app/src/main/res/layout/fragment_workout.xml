@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WorkoutFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Ezfiness"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.053"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.036" />
+
+        <TextView
+            android:id="@+id/Categories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="25dp"
+            android:text="@string/Categories"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="412dp"
+            android:layout_height="103dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="36dp"
+            android:fillViewport="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.585"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Categories">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/BoxingButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@drawable/rectangle"
+                    android:text="@string/Boxing"
+                    android:textColorHighlight="#c3c3c3"
+                    android:textColorLink="#c3c3c3" />
+
+                <Button
+                    android:id="@+id/HiitButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@drawable/rectangle"
+                    android:text="@string/Hiit" />
+
+                <Button
+                    android:id="@+id/YogaButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@drawable/rectangle"
+                    android:text="@string/Yoga" />
+
+                <Button
+                    android:id="@+id/PilatesButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@drawable/rectangle"
+                    android:text="@string/Pilates" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/workupplan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="230dp"
+            android:text="@string/Workupplan"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+        <ImageView
+            android:id="@+id/imageSquat"
+            android:layout_width="351dp"
+            android:layout_height="191dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintEnd_toEndOf="@+id/workupplan"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/workupplan"
+            app:layout_constraintTop_toBottomOf="@+id/workupplan"
+            app:srcCompat="@drawable/workup1" />
+
+        <TextView
+            android:id="@+id/testRep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Tabata"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageSquat"
+            app:layout_constraintHorizontal_bias="0.83"
+            app:layout_constraintStart_toStartOf="@+id/imageSquat"
+            app:layout_constraintTop_toTopOf="@+id/imageSquat"
+            app:layout_constraintVertical_bias="0.075" />
+
+        <ImageView
+            android:id="@+id/iBoxing"
+            android:layout_width="351dp"
+            android:layout_height="191dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageSquat"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imageSquat"
+            app:layout_constraintTop_toBottomOf="@+id/imageSquat"
+            app:srcCompat="@drawable/workup2" />
+
+        <TextView
+            android:id="@+id/tetBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/abs"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/iBoxing"
+            app:layout_constraintEnd_toEndOf="@+id/iBoxing"
+            app:layout_constraintHorizontal_bias="0.883"
+            app:layout_constraintStart_toStartOf="@+id/iBoxing"
+            app:layout_constraintTop_toTopOf="@+id/iBoxing"
+            app:layout_constraintVertical_bias="0.203" />
+
+        <ImageView
+            android:id="@+id/imageLeg"
+            android:layout_width="351dp"
+            android:layout_height="191dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/iBoxing"
+            app:layout_constraintTop_toBottomOf="@+id/iBoxing"
+            app:srcCompat="@drawable/dips" />
+
+        <TextView
+            android:id="@+id/testDips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Leg"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageLeg"
+            app:layout_constraintHorizontal_bias="0.843"
+            app:layout_constraintStart_toStartOf="@+id/imageLeg"
+            app:layout_constraintTop_toTopOf="@+id/imageLeg"
+            app:layout_constraintVertical_bias="0.125" />
+
+        <ImageView
+            android:id="@+id/imagePushUp"
+            android:layout_width="351dp"
+            android:layout_height="191dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imageLeg"
+            app:layout_constraintTop_toBottomOf="@+id/imageLeg"
+            app:srcCompat="@drawable/pushup" />
+
+        <TextView
+            android:id="@+id/testPush"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Up"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imagePushUp"
+            app:layout_constraintHorizontal_bias="0.833"
+            app:layout_constraintStart_toStartOf="@+id/imagePushUp"
+            app:layout_constraintTop_toTopOf="@+id/imagePushUp"
+            app:layout_constraintVertical_bias="0.184" />
+
+        <FrameLayout
+            android:id="@+id/fragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+        <Button
+            android:id="@+id/buttonPlanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:text="@string/Planner"
+            app:layout_constraintBottom_toTopOf="@+id/imageSquat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.644"
+            app:layout_constraintStart_toEndOf="@+id/workupplan"
+            app:layout_constraintTop_toBottomOf="@+id/fragmentContainer"
+            app:layout_constraintVertical_bias="0.066" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>

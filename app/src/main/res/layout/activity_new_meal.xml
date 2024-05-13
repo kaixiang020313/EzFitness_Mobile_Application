@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- New Meal Title -->
+    <TextView
+        android:id="@+id/textViewNewMealTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Meal"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Meal Name -->
+    <TextView
+        android:id="@+id/textViewMealName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meal Name"
+        android:textSize="18sp"
+        android:layout_below="@id/textViewNewMealTitle"
+        android:layout_marginTop="32dp"/>
+
+    <EditText
+        android:id="@+id/editTextMealName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewMealName"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:hint="Enter meal name"/>
+
+    <!-- Calories -->
+    <TextView
+        android:id="@+id/textViewCalories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calories"
+        android:textSize="18sp"
+        android:layout_below="@id/editTextMealName"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextCalories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewCalories"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:hint="Enter calories (gram)"/>
+
+    <!-- Carbs -->
+    <TextView
+        android:id="@+id/textViewCarbs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carbs"
+        android:textSize="18sp"
+        android:layout_below="@id/editTextCalories"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextCarbs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewCarbs"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:hint="Enter carbs (gram)"/>
+
+    <!-- Protein -->
+    <TextView
+        android:id="@+id/textViewProtein"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Protein"
+        android:textSize="18sp"
+        android:layout_below="@id/editTextCarbs"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextProtein"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewProtein"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:hint="Enter protein (gram)"/>
+
+    <!-- Fats -->
+    <TextView
+        android:id="@+id/textViewFats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fats"
+        android:textSize="18sp"
+        android:layout_below="@id/editTextProtein"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextFats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewFats"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:hint="Enter fats (gram)"/>
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_below="@id/editTextFats"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"/>
+
+</RelativeLayout>

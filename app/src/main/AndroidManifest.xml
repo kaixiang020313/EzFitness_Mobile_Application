@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:requestLegacyExternalStorage="true"
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EzFitness"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".InbodyReport"
+            android:exported="false" />
+        <activity
+            android:name=".Planner"
+            android:exported="false" />
+        <activity
+            android:name=".UploadVideoPilates"
+            android:exported="false" />
+        <activity
+            android:name=".UploadVideoYoga"
+            android:exported="false" />
+        <activity
+            android:name=".UploadVideoHiit"
+            android:exported="false" />
+        <activity
+            android:name=".UploadVideoBoxing"
+            android:exported="false" />
+        <activity
+            android:name=".UploadVideoAbs"
+            android:exported="false" />
+        <activity
+            android:name=".UploadVideoPushup"
+            android:exported="false" />
+        <activity
+            android:name=".UploadVideoLeg"
+            android:exported="false" />
+        <activity
+            android:name=".UploadVideoTabata"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="true"
+            android:label="Sign Up" />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:label="Forgot Password"
+            android:parentActivityName=".LoginActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LoginActivity" />
+        </activity>
+        <activity android:name=".EditProfileActivity" />
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:parentActivityName=".EditProfileActivity" />
+        <activity
+            android:name=".AddMealActivity"
+            android:parentActivityName=".DietaryFragment" />
+        <activity
+            android:name=".NewMealActivity"
+            android:parentActivityName=".DietaryFragment" />
+        <activity
+            android:name=".Category1Activity"
+            android:parentActivityName=".DietaryFragment" />
+        <activity
+            android:name=".Category2Activity"
+            android:parentActivityName=".DietaryFragment" />
+        <activity
+            android:name=".Category3Activity"
+            android:parentActivityName=".DietaryFragment" />
+        <activity
+            android:name=".Category4Activity"
+            android:parentActivityName=".DietaryFragment" />
+        <activity
+            android:name=".Category5Activity"
+            android:parentActivityName=".DietaryFragment" />
+        <activity
+            android:name=".VideoPilates"
+            android:exported="false" />
+        <activity
+            android:name=".VideoYoga"
+            android:exported="false" />
+        <activity
+            android:name=".VideoHiit"
+            android:exported="false" />
+        <activity
+            android:name=".VideoBoxing"
+            android:exported="false" />
+        <activity
+            android:name=".VideoPushUp"
+            android:exported="false" />
+        <activity
+            android:name=".VideoLeg"
+            android:exported="false" />
+        <activity
+            android:name=".VideoAbs"
+            android:exported="false" />
+        <activity
+            android:name=".VideoTabata"
+            android:exported="false" />
+        <activity
+            android:name=".WorkUpPreview4"
+            android:exported="false" />
+        <activity
+            android:name=".WorkUpPreview3"
+            android:exported="false" />
+        <activity
+            android:name=".WorkUpPreview2"
+            android:exported="false" />
+        <activity
+            android:name=".WorkUpPreview"
+            android:exported="false" />
+        <activity
+            android:name=".Pilates"
+            android:exported="false" />
+        <activity
+            android:name=".Yoga"
+            android:exported="false" />
+        <activity
+            android:name=".Hiit"
+            android:exported="false" />
+        <activity
+            android:name=".Boxing"
+            android:exported="false" />
+    </application>
+
+</manifest>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "474460187691",
+    "project_id": "ezfitness-78842",
+    "storage_bucket": "ezfitness-78842.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:474460187691:android:966bc55bcb7d06c4fd4e6e",
+        "android_client_info": {
+          "package_name": "com.example.ezfitness"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBssQyOBR2zZVG-Az48sQDsH6fZ73A55K4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

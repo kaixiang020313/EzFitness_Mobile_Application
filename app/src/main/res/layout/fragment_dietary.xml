@@ -1,0 +1,175 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:padding="16dp">
+
+    <!-- Dietary Title -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dietary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"/>
+
+    <!-- Date Selector -->
+    <LinearLayout
+        android:id="@+id/layoutDateSelector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginTop="16dp">
+
+        <ImageButton
+            android:id="@+id/btnPreviousDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_previous"
+            android:layout_marginStart="16dp"/>
+
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:onClick="onDateClicked"
+            android:text="Today" />
+
+        <ImageButton
+            android:id="@+id/btnNextDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_next"
+            android:layout_marginEnd="16dp"/>
+
+    </LinearLayout>
+
+    <!-- Calories Remaining -->
+    <LinearLayout
+        android:id="@+id/layoutCaloriesRemaining"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutDateSelector"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_rounded_corners"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/textViewCaloriesRemainingBaseGoal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Consume Goal: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewCaloriesRemainingFood"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Calories Consumed: "
+                android:textStyle="bold"
+                android:layout_marginStart="8dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <TextView
+                android:id="@+id/textViewCaloriesRemaining"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="Calories Remaining:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="16dp"/>
+
+            <EditText
+                android:id="@+id/editTextCaloriesRemaining"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_marginTop="16dp"
+                android:hint="Calories Remaining"
+                android:inputType="numberDecimal" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutNutritionConsumed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutCaloriesRemaining"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_rounded_corners"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textViewDateConsumedCalories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calories Consumed: 0 kcal"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/textViewDateConsumedProtein"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Protein Consumed: 0g"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/textViewDateConsumedFat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fat Consumed: 0g"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/textViewDateConsumedCarbs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Carbs Consumed: 0g"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+    <!-- Add Meal Button -->
+    <Button
+        android:id="@+id/btnAddMeal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Meal"
+        android:layout_below="@id/layoutNutritionConsumed"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

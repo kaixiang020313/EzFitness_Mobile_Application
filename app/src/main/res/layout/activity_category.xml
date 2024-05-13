@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Category Title -->
+    <TextView
+        android:id="@+id/textViewCategoryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@id/btnBack"/>
+
+    <!-- Box to display meal information -->
+    <LinearLayout
+        android:id="@+id/mealInfoBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewCategoryTitle"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_rounded_corners"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Meal 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Meal Name -->
+            <TextView
+                android:id="@+id/meal1Name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="Meal 1"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Nutritional Information -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:orientation="horizontal">
+
+                <!-- Calories -->
+                <TextView
+                    android:id="@+id/meal1Calories"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Calories: 0"/>
+
+                <!-- Protein -->
+                <TextView
+                    android:id="@+id/meal1Protein"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Protein: 0g"/>
+
+                <!-- Fat -->
+                <TextView
+                    android:id="@+id/meal1Fat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Fat: 0g"/>
+
+                <!-- Carbs -->
+                <TextView
+                    android:id="@+id/meal1Carbs"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Carbs: 0g"/>
+
+                <!-- Add Button -->
+                <Button
+                    android:id="@+id/btnAddMeal1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="8dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <!-- Meal 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <!-- Meal Name -->
+            <TextView
+                android:id="@+id/meal2Name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="Meal 2"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Nutritional Information -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:orientation="horizontal">
+
+                <!-- Calories -->
+                <TextView
+                    android:id="@+id/meal2Calories"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Calories: 0"/>
+
+                <!-- Protein -->
+                <TextView
+                    android:id="@+id/meal2Protein"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Protein: 0g"/>
+
+                <!-- Fat -->
+                <TextView
+                    android:id="@+id/meal2Fat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Fat: 0g"/>
+
+                <!-- Carbs -->
+                <TextView
+                    android:id="@+id/meal2Carbs"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Carbs: 0g"/>
+
+                <!-- Add Button -->
+                <Button
+                    android:id="@+id/btnAddMeal2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="8dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <!-- Meal 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <!-- Meal Name -->
+            <TextView
+                android:id="@+id/meal3Name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="Meal 3"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Nutritional Information -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:orientation="horizontal">
+
+                <!-- Calories -->
+                <TextView
+                    android:id="@+id/meal3Calories"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Calories: 0"/>
+
+                <!-- Protein -->
+                <TextView
+                    android:id="@+id/meal3Protein"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Protein: 0g"/>
+
+                <!-- Fat -->
+                <TextView
+                    android:id="@+id/meal3Fat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Fat: 0g"/>
+
+                <!-- Carbs -->
+                <TextView
+                    android:id="@+id/meal3Carbs"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Carbs: 0g"/>
+
+                <!-- Add Button -->
+                <Button
+                    android:id="@+id/btnAddMeal3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="8dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <!-- Meal 4 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <!-- Meal Name -->
+            <TextView
+                android:id="@+id/meal4Name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="Meal 4"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Nutritional Information -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:orientation="horizontal">
+
+                <!-- Calories -->
+                <TextView
+                    android:id="@+id/meal4Calories"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Calories: 0"/>
+
+                <!-- Protein -->
+                <TextView
+                    android:id="@+id/meal4Protein"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Protein: 0g"/>
+
+                <!-- Fat -->
+                <TextView
+                    android:id="@+id/meal4Fat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Fat: 0g"/>
+
+                <!-- Carbs -->
+                <TextView
+                    android:id="@+id/meal4Carbs"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Carbs: 0g"/>
+
+                <!-- Add Button -->
+                <Button
+                    android:id="@+id/btnAddMeal4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="8dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

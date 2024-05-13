@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InbodyReport">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="28dp"
+                android:src="@drawable/ic_back"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/Inbody"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewBody_C_A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"
+                android:text="Body Composition Analysis"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <TextView
+                android:id="@+id/textViewIW"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:text="Intracellular Water "
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewBody_C_A" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:background="#000000"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewIW"
+                app:layout_constraintStart_toEndOf="@+id/textViewIW"
+                app:layout_constraintTop_toTopOf="@+id/textViewIW" />
+
+            <EditText
+                android:id="@+id/editIW"
+                android:layout_width="167dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:ems="10"
+                android:hint="number"
+                android:inputType="number"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewIW"
+                app:layout_constraintStart_toEndOf="@+id/textViewIW"
+                app:layout_constraintTop_toTopOf="@+id/textViewIW" />
+
+            <TextView
+                android:id="@+id/textViewEW"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="40dp"
+                android:text="Extracellular Water "
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewIW" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="6dp"
+                android:background="#000000"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewEW"
+                app:layout_constraintStart_toEndOf="@+id/textViewEW"
+                app:layout_constraintTop_toTopOf="@+id/textViewEW" />
+
+            <EditText
+                android:id="@+id/editEW"
+                android:layout_width="167dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:ems="10"
+                android:hint="number"
+                android:inputType="number"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewEW"
+                app:layout_constraintStart_toEndOf="@+id/textViewEW"
+                app:layout_constraintTop_toTopOf="@+id/textViewEW" />
+
+            <TextView
+                android:id="@+id/textViewTBW"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="40dp"
+                android:text="Total Body Water "
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewEW" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:background="#000000"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewTBW"
+                app:layout_constraintStart_toEndOf="@+id/textViewTBW"
+                app:layout_constraintTop_toTopOf="@+id/textViewTBW" />
+
+            <EditText
+                android:id="@+id/editTBW"
+                android:layout_width="167dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="28dp"
+                android:ems="10"
+                android:hint="number"
+                android:inputType="number"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewTBW"
+                app:layout_constraintStart_toEndOf="@+id/textViewTBW"
+                app:layout_constraintTop_toTopOf="@+id/textViewTBW" />
+
+
+            <TextView
+                android:id="@+id/textViewDLM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="40dp"
+                android:text="Dry Lean Mass "
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewTBW" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="40dp"
+                android:background="#000000"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewDLM"
+                app:layout_constraintStart_toEndOf="@+id/textViewDLM"
+                app:layout_constraintTop_toTopOf="@+id/textViewDLM" />
+
+            <EditText
+                android:id="@+id/editDLM"
+                android:layout_width="167dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="48dp"
+                android:ems="10"
+                android:hint="number"
+                android:inputType="number"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewDLM"
+                app:layout_constraintStart_toEndOf="@+id/textViewDLM"
+                app:layout_constraintTop_toTopOf="@+id/textViewDLM" />
+
+
+            <TextView
+                android:id="@+id/textViewLBM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="40dp"
+                android:text="Lean Body Mass"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewDLM" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="32dp"
+                android:background="#000000"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewLBM"
+                app:layout_constraintStart_toEndOf="@+id/textViewLBM"
+                app:layout_constraintTop_toTopOf="@+id/textViewLBM" />
+
+            <EditText
+                android:id="@+id/editLBM"
+                android:layout_width="167dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="40dp"
+                android:ems="10"
+                android:hint="number"
+                android:inputType="number"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewLBM"
+                app:layout_constraintStart_toEndOf="@+id/textViewLBM"
+                app:layout_constraintTop_toTopOf="@+id/textViewLBM" />
+
+            <TextView
+                android:id="@+id/textViewBFM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="40dp"
+                android:text="Body Fat Mass"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewLBM" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="46dp"
+                android:background="#000000"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewBFM"
+                app:layout_constraintStart_toEndOf="@+id/textViewBFM"
+                app:layout_constraintTop_toTopOf="@+id/textViewBFM" />
+
+            <EditText
+                android:id="@+id/editBFM"
+                android:layout_width="167dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="55dp"
+                android:ems="10"
+                android:hint="number"
+                android:inputType="number"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewBFM"
+                app:layout_constraintStart_toEndOf="@+id/textViewBFM"
+                app:layout_constraintTop_toTopOf="@+id/textViewBFM" />
+
+            <TextView
+                android:id="@+id/textWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="40dp"
+                android:text="Weight"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewBFM" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="110dp"
+                android:background="#000000"
+                app:layout_constraintBottom_toBottomOf="@+id/textWeight"
+                app:layout_constraintStart_toEndOf="@+id/textWeight"
+                app:layout_constraintTop_toTopOf="@+id/textWeight" />
+
+            <EditText
+                android:id="@+id/editWeight"
+                android:layout_width="167dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="120dp"
+                android:ems="10"
+                android:hint="number"
+                android:inputType="number"
+                app:layout_constraintBottom_toBottomOf="@+id/textWeight"
+                app:layout_constraintStart_toEndOf="@+id/textWeight"
+                app:layout_constraintTop_toTopOf="@+id/textWeight" />
+
+            <TextView
+                android:id="@+id/textViewMuscle_FA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="50dp"
+                android:text="Muscle-Fat Analysis"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textWeight" />
+
+            <TextView
+                android:id="@+id/textViewSMM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:text="SMM"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewMuscle_FA" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="125dp"
+                android:background="#000000"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewSMM"
+                app:layout_constraintStart_toEndOf="@+id/textViewSMM"
+                app:layout_constraintTop_toTopOf="@+id/textViewSMM" />
+
+            <EditText
+                android:id="@+id/editSMM"
+                android:layout_width="167dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="135dp"
+                android:ems="10"
+                android:hint="number"
+                android:inputType="number"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewSMM"
+                app:layout_constraintStart_toEndOf="@+id/textViewSMM"
+                app:layout_constraintTop_toTopOf="@+id/textViewSMM" />
+
+
+            <TextView
+                android:id="@+id/textViewOA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="50dp"
+                android:text="Obesity Analysis"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewSMM" />
+
+            <TextView
+                android:id="@+id/textViewBMI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:text="BMI"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewOA" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="135dp"
+                android:background="#000000"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewBMI"
+                app:layout_constraintStart_toEndOf="@+id/textViewBMI"
+                app:layout_constraintTop_toTopOf="@+id/textViewBMI" />
+
+            <EditText
+                android:id="@+id/editBMI"
+                android:layout_width="167dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="145dp"
+                android:ems="10"
+                android:hint="number"
+                android:inputType="number"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewBMI"
+                app:layout_constraintStart_toEndOf="@+id/textViewBMI"
+                app:layout_constraintTop_toTopOf="@+id/textViewBMI" />
+
+            <TextView
+                android:id="@+id/textViewPBF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="40dp"
+                android:text="PBF"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewBMI" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="135dp"
+                android:background="#000000"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewPBF"
+                app:layout_constraintStart_toEndOf="@+id/textViewPBF"
+                app:layout_constraintTop_toTopOf="@+id/textViewPBF" />
+
+            <EditText
+                android:id="@+id/editPBF"
+                android:layout_width="167dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="145dp"
+                android:ems="10"
+                android:hint="number"
+                android:inputType="number"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewPBF"
+                app:layout_constraintStart_toEndOf="@+id/textViewPBF"
+                app:layout_constraintTop_toTopOf="@+id/textViewPBF" />
+
+            <TextView
+                android:id="@+id/textViewSLA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="50dp"
+                android:text="Segmental Lean Analysis"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewPBF" />
+
+            <TextView
+                android:id="@+id/textViewRA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:text="Right Arm"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewSLA" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="90dp"
+                android:background="#000000"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewRA"
+                app:layout_constraintStart_toEndOf="@+id/textViewRA"
+                app:layout_constraintTop_toTopOf="@+id/textViewRA" />
+
+            <EditText
+                android:id="@+id/editRA"
+                android:layout_width="167dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="100dp"
+                android:ems="10"
+                android:hint="number"
+                android:inputType="number"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewRA"
+                app:layout_constraintStart_toEndOf="@+id/textViewRA"
+                app:layout_constraintTop_toTopOf="@+id/textViewRA" />
+
+            <TextView
+                android:id="@+id/textViewLA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="40dp"
+                android:text="Left Arm"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewRA" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="101dp"
+                android:background="#000000"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewLA"
+                app:layout_constraintStart_toEndOf="@+id/textViewLA"
+                app:layout_constraintTop_toTopOf="@+id/textViewLA" />
+
+            <EditText
+                android:id="@+id/editLA"
+                android:layout_width="167dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="111dp"
+                android:ems="10"
+                android:hint="number"
+                android:inputType="number"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewLA"
+                app:layout_constraintStart_toEndOf="@+id/textViewLA"
+                app:layout_constraintTop_toTopOf="@+id/textViewLA" />
+
+            <TextView
+                android:id="@+id/textViewT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="40dp"
+                android:text="Trunk"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewLA" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="126dp"
+                android:background="#000000"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewT"
+                app:layout_constraintStart_toEndOf="@+id/textViewT"
+                app:layout_constraintTop_toTopOf="@+id/textViewT" />
+
+            <EditText
+                android:id="@+id/editT"
+                android:layout_width="167dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="136dp"
+                android:ems="10"
+                android:hint="number"
+                android:inputType="number"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewT"
+                app:layout_constraintStart_toEndOf="@+id/textViewT"
+                app:layout_constraintTop_toTopOf="@+id/textViewT" />
+
+            <TextView
+                android:id="@+id/textViewRL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="40dp"
+                android:text="Right Leg"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewT" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="99dp"
+                android:background="#000000"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewRL"
+                app:layout_constraintStart_toEndOf="@+id/textViewRL"
+                app:layout_constraintTop_toTopOf="@+id/textViewRL" />
+
+            <EditText
+                android:id="@+id/editRL"
+                android:layout_width="167dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="109dp"
+                android:ems="10"
+                android:hint="number"
+                android:inputType="number"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewRL"
+                app:layout_constraintStart_toEndOf="@+id/textViewRL"
+                app:layout_constraintTop_toTopOf="@+id/textViewRL" />
+
+            <TextView
+                android:id="@+id/textViewLL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="40dp"
+                android:text="Left Leg"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewRL" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="110dp"
+                android:background="#000000"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewLL"
+                app:layout_constraintStart_toEndOf="@+id/textViewLL"
+                app:layout_constraintTop_toTopOf="@+id/textViewLL" />
+
+            <EditText
+                android:id="@+id/editLL"
+                android:layout_width="167dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="120dp"
+                android:ems="10"
+                android:hint="number"
+                android:inputType="number"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewLL"
+                app:layout_constraintStart_toEndOf="@+id/textViewLL"
+                app:layout_constraintTop_toTopOf="@+id/textViewLL" />
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/select_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="60dp"
+        android:contentDescription="@string/add_question_fragment_label"
+        app:backgroundTint="@color/white"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:srcCompat="@drawable/baseline_add_24"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/done"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="0dp"
+        android:text="@string/done" />
+
+</RelativeLayout>
